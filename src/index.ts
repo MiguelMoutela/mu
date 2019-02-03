@@ -2,6 +2,8 @@ require("dotenv").config();
 import { GraphQLServer } from "graphql-yoga";
 import mongoose from "mongoose";
 
+import schema from './graphql/';
+
 import { options } from "./utils/options";
 import { context } from "./utils/context";
 
