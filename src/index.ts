@@ -27,5 +27,5 @@ const server = new GraphQLServer({
 });
 
 server.start(options, ({ port }) => {
-  console.log(`👉 Server is running on http://localhost:${port}`);
+  console.log(`👉 GraphQL Server with TypeScript is running on http://localhost:${port}`);
 });
