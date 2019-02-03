@@ -1,0 +1,8 @@
+{
+  "name": "mu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/leonardomso/mu.git",
+  "author": "Leonardo Maldonado <leonardomso11@gmail.com>",
+  "license": "MIT"
+}
