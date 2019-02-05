@@ -7,12 +7,9 @@ import schema from './graphql/';
 import { options } from "./utils/options";
 import { context } from "./utils/context";
 
-const { URI: db } = process.env;
-
 // Connect to MongoDB with Mongoose.
 mongoose
-  .connect(
-    db,
+  .connect(process.env.URI,
     {
       useCreateIndex: true,
       useNewUrlParser: true
@@ -27,5 +24,5 @@ const server = new GraphQLServer({
 });
 
 server.start(options, ({ port }) => {
-  console.log(`👉 GraphQL Server with TypeScript is running on http://localhost:${port}`);
+  console.log(`👉 GraphQL Server with TypeScript is running on http://localhost:${port}/playground`);
 });

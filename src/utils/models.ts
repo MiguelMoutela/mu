@@ -1,3 +1,4 @@
-import User from "../models/User/";
+import Player from "../models/Player/";
+import Team from "../models/Team/";
 
-export const models = { User };
+export const models = { Player, Team };

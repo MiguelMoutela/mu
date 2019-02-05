@@ -3,6 +3,10 @@
     "version": "1.0.0",
     "description": "🦏 A boilerplate using GraphQL and TypeScript",
     "main": "index.js",
+    "scripts": {
+        "start": "nodemon",
+        "generate-types": "gql-gen"
+    },
     "repository": "https://github.com/leonardomso/mu.git",
     "keywords": [
         "graphql",
@@ -29,6 +33,7 @@
         "@types/mongoose": "^5.3.12",
         "graphql-code-generator": "^0.16.1",
         "graphql-codegen-typescript-common": "^0.16.1",
+        "graphql-codegen-typescript-mongodb": "^0.16.1",
         "graphql-codegen-typescript-resolvers": "^0.16.1",
         "graphql-codegen-typescript-server": "^0.16.1",
         "nodemon": "^1.18.9",
