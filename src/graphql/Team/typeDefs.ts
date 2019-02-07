@@ -1,4 +1,4 @@
-export default `
+const typeDefs = `
     type Team {
         _id: ID!
         name: String!
@@ -11,8 +11,10 @@ export default `
     }
 
     type Mutation {
-        createTeam(name: String!, players: [Player]!): Team
+        createTeam(name: String!): Team
         updateTeam(name: String): Team
         deleteTeam(_id: ID!): Team
     }
 `;
+
+export default typeDefs;

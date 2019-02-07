@@ -1,4 +1,4 @@
-export default `
+const typeDefs = `
     type Player {
         _id: ID!
         name: String!
@@ -19,3 +19,5 @@ export default `
         deletePlayer(_id: ID!): Player
     }
 `;
+
+export default typeDefs;

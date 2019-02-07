@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
-        "target": "esnext",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "esModuleInterop": true
+      "target": "es2017",
+      "moduleResolution": "node",
+      "module": "commonjs",
+      "sourceMap": true,
+      "rootDir": "src",
+      "outDir": "dist",
+      "lib": ["esnext", "dom"]
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules", "dist", "**/*.spec.ts"]

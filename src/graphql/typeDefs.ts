@@ -5,4 +5,4 @@ import Team from "./Team/typeDefs";
 
 const typeDefs = [Player, Team];
 
-export default mergeTypes(typeDefs, { all: true });
+export default mergeTypes(typeDefs);

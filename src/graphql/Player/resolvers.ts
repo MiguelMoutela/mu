@@ -1,15 +1,16 @@
-export default {
+const resolvers = {
     Query: {
-      getPlayer: async () => {},
-      getAllPlayers: async () => {}
+        getPlayer: async () => {},
+        getAllPlayers: async () => {}
     },
     Mutation: {
-      createPlayer: async () => {},
-      updatePlayer: async () => {},
-      deletePlayer: async () => {}
+        createPlayer: async () => {},
+        updatePlayer: async () => {},
+        deletePlayer: async () => {}
     },
     Player: {
-      team: async () => {}
+        team: async () => {}
     }
 };
-  
+
+export default resolvers;

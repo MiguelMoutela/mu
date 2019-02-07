@@ -1,4 +1,4 @@
-import { Document, Schema, Model, model } from "mongoose";
+import { Document, model, Model, Schema } from 'mongoose';
 import { ObjectID } from "mongodb";
 
 import { TeamType } from "./types";
