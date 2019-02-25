@@ -1,4 +1,4 @@
-import { Document, model, Model, Schema } from 'mongoose';
+import { Document, model, Model, Schema } from "mongoose";
 import { ObjectID } from "mongodb";
 
 import { TeamType } from "./types";
@@ -15,10 +15,12 @@ const TeamSchema: Schema = new Schema({
         required: true,
         unique: true
     },
-    players: [{
-        type: Schema.Types.ObjectId,
-        ref: "Player"
-    }]
+    players: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Player"
+        }
+    ]
 });
 
 const Team: Model<TeamModel> = model<TeamModel>("Team", TeamSchema);

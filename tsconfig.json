@@ -1,13 +1,15 @@
 {
     "compilerOptions": {
-      "target": "es2017",
-      "moduleResolution": "node",
-      "module": "commonjs",
-      "sourceMap": true,
-      "rootDir": "src",
-      "outDir": "dist",
-      "lib": ["esnext", "dom"]
+        "target": "es2017",
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "sourceMap": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "lib": ["esnext", "dom"]
     },
     "include": ["src/**/*"],
-    "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+    "exclude": ["node_modules", "dist", "**/*.spec.ts"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
 }

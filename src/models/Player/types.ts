@@ -1,4 +1,4 @@
-import { TeamType } from '../Team/types';
+import { TeamType } from "../Team/types";
 
 export interface PlayerType {
     name: String;

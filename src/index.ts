@@ -1,6 +1,6 @@
 require("dotenv").config();
 import { GraphQLServer } from "graphql-yoga";
-import mongoose from "mongoose";
+import * as mongoose from "mongoose";
 
 import schema from "./graphql/";
 
