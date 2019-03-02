@@ -11,8 +11,7 @@ interface UserModel extends UserType, Document {}
 
 const UserSchema: Schema = new Schema({
     name: {
-        type: String,
-        required: true
+        type: String
     },
     email: {
         type: String,
