@@ -1,8 +1,7 @@
 import { mergeResolvers } from "merge-graphql-schemas";
 
-import Player from "./Player/resolvers";
-import Team from "./Team/resolvers";
+import User from "./User/resolvers";
 
-const resolvers = [Player, Team];
+const resolvers = [User];
 
 export default mergeResolvers(resolvers);

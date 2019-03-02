@@ -1,8 +1,9 @@
 import { mergeTypes } from "merge-graphql-schemas";
 
-import Player from "./Player/typeDefs";
-import Team from "./Team/typeDefs";
+import User from "./User/typeDefs";
+import Auth from "./Auth/typeDefs";
+import Error from "./Error/typeDefs";
 
-const typeDefs = [Player, Team];
+const typeDefs = [User, Auth, Error];
 
 export default mergeTypes(typeDefs);
