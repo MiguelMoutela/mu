@@ -37,7 +37,7 @@
         "@types/node": "^11.9.5",
         "babel-runtime": "^6.26.0",
         "graphql-code-generator": "^0.16.1",
-        "graphql-codegen-typescript-common": "^0.16.1",
+        "graphql-codegen-typescript-common": "0.16.1",
         "graphql-codegen-typescript-mongodb": "^0.16.1",
         "graphql-codegen-typescript-resolvers": "^0.16.1",
         "graphql-codegen-typescript-server": "^0.16.1",
