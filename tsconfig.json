@@ -1,13 +1,19 @@
 {
     "compilerOptions": {
-      "target": "esnext",
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "sourceMap": true,
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
-      "esModuleInterop": true
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "dist",
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "emitDecoratorMetadata": true,
+        "baseUrl": ".",
+        "paths": {
+            "@src/*": ["src/*"]
+        },
+        "lib": ["es2017", "dom", "esnext.asynciterable"]
     },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+    "files": ["./node_modules/@types/node/index.d.ts"],
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
 }
