@@ -1,12 +1,11 @@
-schema: src/graphql/**/*.ts
+schema: http://localhost:4000/graphql
 overwrite: true
 watch: true
 require:
     - ts-node/register
 generates:
-    ./src/types/types.ts:
+    ./src/types/types.d.ts:
         plugins:
             - typescript-common
             - typescript-server
             - typescript-resolvers
-            - typescript-mongodb

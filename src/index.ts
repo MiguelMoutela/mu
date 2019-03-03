@@ -1,6 +1,6 @@
 require("dotenv").config();
 import { GraphQLServer } from "graphql-yoga";
-import * as mongoose from "mongoose";
+import mongoose from "mongoose";
 
 import schema from "./graphql/";
 
@@ -23,6 +23,6 @@ const server = new GraphQLServer({
 
 server.start(options, ({ port }) => {
     console.log(
-        `👉 GraphQL Server with TypeScript is running on http://localhost:${port}/playground`
+        `🚀 GraphQL Server with TypeScript is running on http://localhost:${port}/playground`
     );
 });
